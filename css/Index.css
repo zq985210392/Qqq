@@ -1,0 +1,272 @@
+/*Page1*/
+.page1{
+	position: relative;
+	background: url("../img/index_6.png") no-repeat;
+	background-size: cover;
+}
+.page1 img{
+	position: absolute;
+	opacity: 0;
+}
+.page1 img:nth-of-type(1){
+	right: 0;
+	top: 0.54rem;
+	width:6.88rem;
+	height:3.48rem;
+}
+.page1 img:nth-of-type(2){
+	left:0;
+	bottom:0;
+	width:100%;
+	height:4.3rem;
+}
+.page1 img:nth-of-type(3){
+	left:1.8rem;
+	bottom:6.6rem;
+	width:3.2rem;
+	height:2.1rem;
+}
+.page1 img:nth-of-type(4){
+	left:0.6rem;
+	top:4rem;
+	width:2.5rem;
+	height:2.8rem;
+}
+.page1 img:nth-of-type(5){
+	top:3.8rem;
+	right:0.4rem;
+	width:4rem;
+	height:4rem;
+}
+.page1 img:nth-child(1){/*获取Page1子元素中的第一个，并且标签名是IMG的*/
+	
+}
+.page1 img:nth-of-type(1){/*首先获取Page1儿子中的所有IMG，再获取IMG中的第一个*/}
+/*Page1的动画*/
+/*1.所有需要实现动画效果的元素，初始都是隐藏的：*/
+/*2.吧需要的动画写在对应ID为Pages下即可：JS中在滑动到某一个屏幕的时候，会为当前的页面增加对应的pagexID，此时需要执行设定的动画效果*/
+#page1 img:nth-of-type(1){
+	/*CSS3中的animation帧动画*/
+	animation: bounceInRight 1s both;
+}
+#page1 img:nth-of-type(2){
+	/*CSS3中的animation帧动画*/
+	animation: bounceInUp 1s both;
+}
+#page1 img:nth-of-type(4){
+	/*CSS3中的animation帧动画*/
+	animation: zoomIn 1s 1s both;
+}
+#page1 img:nth-of-type(5){
+	/*CSS3中的animation帧动画*/
+	animation: rotateInDownRight 1s 2s both;
+}
+#page1 img:nth-of-type(3){
+	/*CSS3中的animation帧动画*/
+	animation: zoomIn 1s 3s both;
+}
+/*PAGE2*/
+.page2 {
+    background: url("../img/page2_1.jpg") no-repeat;
+    background-size: cover;
+}
+
+.page2 img {
+    opacity: 0;
+}
+
+.page2 .text p {
+    opacity: 0;
+}
+
+.page2 .content {
+    opacity: 0;
+}
+
+.page2 img:nth-of-type(1) {
+    position: absolute;
+    left: .8rem;
+    top: 1.3rem;
+    width: 2.2rem;
+    height: 1.6rem;
+}
+
+.page2 img:nth-of-type(2) {
+    position: absolute;
+    right: .6rem;
+    top: 1.2rem;
+    width: 2.2rem;
+    height: 2rem;
+}
+
+.page2 img:nth-of-type(3) {
+    position: absolute;
+    right: .6rem;
+    top: 3.4rem;
+    width: 1.6rem;
+    height: 1.2rem;
+}
+
+.page2 img:nth-of-type(4) {
+    position: absolute;
+    right: .4rem;
+    top: 4.8rem;
+    width: 1.8rem;
+    height: 1.1rem;
+}
+
+.page2 img:nth-of-type(5) {
+    position: absolute;
+    bottom: .7rem;
+    left: .4rem;
+    width: 1.7rem;
+    height: 1.2rem;
+}
+
+.page2 img:nth-of-type(6) {
+    position: absolute;
+    bottom: .7rem;
+    left: 50%;
+    margin-left: -.9rem;
+    width: 1.8rem;
+    height: 1.2rem;
+}
+
+.page2 img:nth-of-type(7) {
+    position: absolute;
+    bottom: .7rem;
+    right: .4rem;
+    width: 1.9rem;
+    height: .9rem;
+}
+
+.page2 .text {
+    position: absolute;
+    left: .8rem;
+    top: 3rem;
+    width: 3.6rem;
+}
+
+.page2 .text p {
+    line-height: .64rem;
+    font-size: .32rem;
+    color: rgb(84, 63, 27);
+}
+
+.page2 .content {
+    position: absolute;
+    left: 45%;
+    margin-left: -2.72rem;
+    bottom: 2.2rem;
+    padding: .4rem;
+    width: 5.44rem;
+    height: 3.24rem;
+    background: url("../img/page2_6.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.page2 .content .slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.page2 .content .slides .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.page2 .content .slides .slide.slide--current {
+    opacity: 1;
+}
+
+.page2 .content .slides .slide .slide__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#page2 img:nth-of-type(1) {
+    animation: bounceInDown 1s both;
+}
+
+#page2 img:nth-of-type(2) {
+    animation: bounceInRight 1s .2s both;
+}
+
+#page2 img:nth-of-type(3) {
+    animation: rotateIn 1s .4s both;
+}
+
+#page2 img:nth-of-type(4) {
+    animation: jello 1s .6s both;
+}
+
+#page2 img:nth-of-type(5) {
+    animation: bounceInUp 1s .8s both;
+}
+
+#page2 img:nth-of-type(6) {
+    animation: bounceInUp 1s 1s both;
+}
+
+#page2 img:nth-of-type(7) {
+    animation: tada 1s 1.2s both;
+}
+
+#page2 .text p:nth-of-type(1) {
+    animation: fadeIn 1s 1s both;
+}
+
+#page2 .text p:nth-of-type(2) {
+    animation: fadeIn 1s 1.5s both;
+}
+
+#page2 .text p:nth-of-type(3) {
+    animation: fadeIn 1s 2s both;
+}
+
+#page2 .text p:nth-of-type(4) {
+    animation: fadeIn 1s 2.5s both;
+}
+
+#page2 .text p:nth-of-type(5) {
+    animation: fadeIn 1s 3s both;
+}
+
+#page2 .text p:nth-of-type(6) {
+    animation: fadeIn 1s 3.5s both;
+}
+
+#page2 .content {
+    animation: zoomIn 1s 2s both;
+}
+
+/*MUSIC*/
+.musicBtn{
+	position: absolute;
+top: .3rem;
+right: .3rem;
+z-index: 9999;
+width: .6rem;
+height: .6rem;
+background: url('../img/music.svg') no-repeat;
+background-size: 100% 100%;
+}
+.musicBtn.Move{
+	animation: musicMove 1s linear infinite both;
+}
+@keyframes musicMove {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
